@@ -1,0 +1,80 @@
+@import './color.scss';
+
+.joke_today_copy_btn {
+    position: absolute;
+    top: calc(0% + 14px);
+    right: calc(0% + 18px);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba($color: $city-light, $alpha: .8);
+    border-radius: 50%;
+    transition: background 0.3s ease 0s;
+
+    &:hover {
+        background: rgba($color: $city-light, $alpha: .5);
+    }
+
+    i {
+        font-size: 16px;
+        color: $prestige-blue;
+    }
+}
+
+.option_container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 12px 16px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease 0s;
+
+    i {
+        color: $prestige-blue;
+        margin-right: .75rem;
+        font-size: 16px;
+    }
+
+    &:hover {
+        background: $anti-flash-white;
+    }
+}
+
+.copy_snackbar_container {
+    margin-bottom: 40px;
+}
+
+.copy_snackbar_content {
+    background: $rise-shine-yellow;
+    font-family: Poppins;
+    font-weight: 600;
+    padding: 16px 28px;
+    border-radius: 50px;
+    letter-spacing: .25px;
+    font-size: 16px;
+}
+
+.card_copy_btn {
+    position: absolute;
+    top: calc(0% + 12px);
+    right: calc(0% + 12px);
+    border: 1px solid rgba($color: $city-light, $alpha: .8);
+    background: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background 0.3s ease 0s;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba($color: $city-light, $alpha: .5);
+    }
+
+    i {
+        color: $prestige-blue;
+        font-size: 16px;
+    }
+}
