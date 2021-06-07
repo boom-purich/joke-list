@@ -1,0 +1,55 @@
+@import './color.scss';
+
+.joke_today_container {
+    height: 100%;
+    padding: 60px 0px 80px;
+}
+
+.joke_today_topic {
+    font-size: 30px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    letter-spacing: .25px;
+    padding: 0px 16px;
+    color: $rise-shine-yellow;
+}
+
+.joke_today_box {
+    position: relative;
+    border: 1px solid rgba($color: $city-light, $alpha: .8);
+    border-radius: 20px;
+    
+    padding: 40px 75px 40px 40px;
+    
+    box-shadow: 2px 2px 3px 1px #fafafa;
+}
+
+.job_today_btn_group {
+    margin-top: 20px;
+    height: 40px;
+}
+
+.job_today_btn {
+    height: 100%;
+}
+
+.joke_today_pulse {
+    transform: scale(1) !important;
+    height: 150px !important;
+    background: rgba($color: $city-light, $alpha: .8) !important;
+    border-radius: 14px !important;
+}
+
+@keyframes fade_in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.joke_today_detail {
+    word-break: break-word;
+    font-family: Roboto;
+    line-height: 1.5;
+    font-size: 36px;
+    letter-spacing: .25px;
+    animation: fade_in .5s ease-in 0s;
+}

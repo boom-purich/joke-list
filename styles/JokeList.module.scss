@@ -1,0 +1,149 @@
+@import './color.scss';
+
+.joke_list_container {
+    padding-bottom: 80px;
+}
+
+.result_joke_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .topic {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0.25px;
+        // padding: 0px 16px;
+        color: #fbc531;
+    }
+
+}
+
+.amount_container {
+    border: 1px solid rgba($color: $city-light, $alpha: .8);
+    padding: 8px 16px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .amount_word,.joke_word {
+        font-weight: 600;
+        letter-spacing: 0.25px;
+    }
+
+    .amount_word {
+        font-size: 20px;
+        padding: 0px 12px;
+        // padding: 0px 0px 0px 16px;
+        border-right: 1px solid rgba($color: $city-light, $alpha: .8);
+    }
+
+    .joke_word {
+        text-align: center;
+        padding: 0px 0px 0px 16px;
+    }
+
+}
+
+.joke_list_content {
+    padding: 50px 0px 80px;
+}
+
+.cannot_find_out_word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    letter-spacing: .25px;
+    animation: fade_in 0.3s ease-in 0s;
+}
+
+@keyframes fade_in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.cannot_find_word {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.find_out_word {
+    background: $rise-shine-yellow;
+    // color: $rise-shine-yellow;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 8px 28px;
+    border-radius: 50px;
+    user-select: none;
+}
+
+.joke_card_group_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,auto));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-auto-rows: 1fr;
+}
+
+.joke_card_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba($color: $city-light, $alpha: .8);
+    border-radius: 9px;
+    padding: 24px 64px 24px 26px;
+    box-shadow: 2px 2px 3px 1px #fafafa;
+    transition: transform 0.3s ease 0s;
+    background: $white;
+    animation: push_up 0.3s ease-in 0s;
+}
+
+@keyframes push_up {
+    from {
+        top: 4%;
+        opacity: 0;
+    }
+    to {
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+.joke_description {
+    margin-bottom: auto;
+    font-family: Roboto;
+    line-height: 1.3;
+    font-size: 20px;
+    word-break: break-word;
+    letter-spacing: .25px;
+    font-weight: 400;
+}
+
+.category_card_group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(80px,auto));
+}
+
+.category_card {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    background: $rise-shine-yellow;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.loading_joke_skeleton {
+    transform: scale(1) !important;
+    height: 400px !important;
+    background: rgba($color: $city-light, $alpha: .5) !important;
+    border-radius: 20px !important;
+}
+
