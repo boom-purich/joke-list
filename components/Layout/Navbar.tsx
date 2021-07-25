@@ -35,14 +35,11 @@ const Navbar = () => {
             <div className={`${styles.navbar_content} ${isSetShadow && styles.navbar_shadow}`}>
                 <div className={styles.navbar_box_container}>
                     <div className={styles.navbar_logo_container}>
-                        <i className={`fas fa-laugh-squint ${styles.logo_icon}`}></i>
+                        <img src="laughing.png" alt="Laugh-Icon" className={styles.logo_icon}/>
                         <span className={styles.topic_word}>Joke List</span>
                     </div>
                     <div className={styles.navbar_menu_container}>
                         <div className={styles.menu_content}>Many jokes are waiting for you.</div>
-                        {/* <div className={styles.menu_content}>
-                            <i className={`fas fa-th-large ${styles.menu_logo_icon}`}></i>
-                        </div> */}
                     </div>
                 </div>
             </div>

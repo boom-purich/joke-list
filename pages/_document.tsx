@@ -5,6 +5,7 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head/>
+                <link rel="icon" href="laughing.png" type="image/x-icon"/>
                 <body>
                     <Main />
                     <NextScript />

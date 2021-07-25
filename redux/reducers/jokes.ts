@@ -8,7 +8,7 @@ const jokeReducer = (state = [],action) => {
             return [...action.payload];
 
         default :
-            return [];
+            return state;
     }
 }
 

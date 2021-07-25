@@ -19,7 +19,7 @@ const SearchBox = () => {
     const handleSearch = async (value, action) => {
         try {
             dispatch(SET_LOADING(true));
-            let cloneFilter: any = {};
+            let cloneFilter: Object = {};
             cloneFilter = value;
             let filterUrl: string = '';
 
@@ -40,8 +40,10 @@ const SearchBox = () => {
 
             const { data: { resultData } } = await axios.get(`/api/jokes${filterUrl}`);
             dispatch(ADD_JOKE(resultData));
+            dispatch(SET_LOADING(false));
         } catch (error) {
             dispatch(ADD_JOKE([]));
+            dispatch(SET_LOADING(false));
         }
 
     }
