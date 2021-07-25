@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Joke List
 
 Website that you can find your joke and create your jokes.
